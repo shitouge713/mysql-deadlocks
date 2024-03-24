@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="owner.deadlocks.demo.dao.PlayerclubMapper">
+  <resultMap id="BaseResultMap" type="owner.deadlocks.demo.pojo.Playerclub">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="modifiedBy" jdbcType="BIGINT" property="modifiedby" />
+    <result column="timeCreated" jdbcType="TIMESTAMP" property="timecreated" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="currentClubId" jdbcType="BIGINT" property="currentclubid" />
+    <result column="endingLevelPosition" jdbcType="INTEGER" property="endinglevelposition" />
+    <result column="nextClubId" jdbcType="BIGINT" property="nextclubid" />
+  </resultMap>
+</mapper>

@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 import owner.deadlocks.demo.dto.UpdateCartParams;
+import owner.deadlocks.demo.pojo.Cart;
 
 
 @Repository

@@ -3,7 +3,7 @@
 <mapper namespace="owner.deadlocks.demo.dao.CartDao">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="owner.deadlocks.demo.dao.Cart">
+    <resultMap id="BaseResultMap" type="owner.deadlocks.demo.pojo.Cart">
         <id column="id" property="id"/>
         <result column="user_id" property="userId"/>
         <result column="biz_type" property="bizType"/>

@@ -1,11 +1,13 @@
-package owner.deadlocks.demo.dao;
+package owner.deadlocks.demo.domain;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import owner.deadlocks.demo.dao.CartDao;
 import owner.deadlocks.demo.dto.UpdateCartParams;
+import owner.deadlocks.demo.pojo.Cart;
 
 /**
  * @Title CartDomain

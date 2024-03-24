@@ -1,4 +1,4 @@
-package owner.deadlocks.demo.dao;
+package owner.deadlocks.demo.pojo;
 
 
 import com.baomidou.mybatisplus.annotation.*;
@@ -22,11 +22,6 @@ import java.time.LocalDateTime;
 @TableName("o_cart")
 public class Cart implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    public static void main(String[] args) {
-        String redisKey = String.format("%s%s", "PROMO:BASE:INFO:", "MPA221650528531030021");
-        System.out.println(redisKey);
-    }
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
