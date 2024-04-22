@@ -18,9 +18,6 @@ public class PlayerclubController {
     @Autowired
     private PlayerclubDomain playerclubDomain;
 
-    @Autowired
-    private PlayeraccountDomain playeraccountDomain;
-
     /**
      * @return
      */

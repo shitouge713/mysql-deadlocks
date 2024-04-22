@@ -63,4 +63,16 @@ public class CartServiceImpl implements CartService {
             log.error("fatalError,simulateDeadlockMethod2,e:{}", e);
         }
     }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public Integer reduceInventory(Long id) {
+        Integer result = 0;
+        try {
+            result = cartDomain.updateById(id);
+        } catch (Exception e) {
+            log.error("fatalError,reduceInventory,e:{}", e);
+        }
+        return result;
+    }
 }

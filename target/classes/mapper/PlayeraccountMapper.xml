@@ -3,5 +3,6 @@
 <mapper namespace="owner.deadlocks.demo.dao.PlayeraccountMapper">
   <resultMap id="BaseResultMap" type="owner.deadlocks.demo.pojo.Playeraccount">
     <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
   </resultMap>
 </mapper>

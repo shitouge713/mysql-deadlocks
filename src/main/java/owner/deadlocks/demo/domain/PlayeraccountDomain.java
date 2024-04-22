@@ -27,7 +27,7 @@ public class PlayeraccountDomain extends ServiceImpl<PlayeraccountMapper, Player
         try {
             for (int i = 1; i < 1001; i++) {
                 Playeraccount club = new Playeraccount();
-                club.setName(i+"");
+                club.setName(i + "");
                 playeraccountMapper.insert(club);
             }
         } catch (Exception e) {
