@@ -34,9 +34,13 @@ public class CartDomain extends ServiceImpl<CartDao, Cart> implements IService<C
         return cartDao.searchByIInShareMode(id);
     }
 
+
     public Integer updateById(Long id) {
         return cartDao.updateById(id);
     }
 
+    public Integer selectSleep(Long times) {
+        return cartDao.selectSleep(times);
+    }
 
 }

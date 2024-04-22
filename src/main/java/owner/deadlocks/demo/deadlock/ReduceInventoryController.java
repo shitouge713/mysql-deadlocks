@@ -4,10 +4,7 @@ package owner.deadlocks.demo.deadlock;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import owner.deadlocks.demo.dto.ReduceInventoryDto;
 import owner.deadlocks.demo.service.CartService;
 
@@ -29,7 +26,7 @@ public class ReduceInventoryController {
      */
     @GetMapping("/reduceInventory")
     @ApiOperation("扣减库存")
-    public boolean reduceInventory(@RequestBody @Valid ReduceInventoryDto dto) {
+    public boolean reduceInventory(@Valid ReduceInventoryDto dto) {
         Integer result = cartService.reduceInventory(dto.getId());
         return result > 0;
     }

@@ -25,4 +25,7 @@ public interface CartDao extends BaseMapper<Cart> {
     @Update(value = "update o_cart set quantity = quantity - 1 where id = #{id} and quantity - 1 > 0")
     Integer updateById(@Param("id") Long id);
 
+    @Update(value = "SELECT SLEEP(#{times})")
+    Integer selectSleep(Long times);
+
 }
